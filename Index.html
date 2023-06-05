@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta content="" charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>BluwaveCRM - Home</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style type="text/css" id="MasterStyles">
+        .btn-nav {
+            background-color: transparent;
+            border: none;
+            font-family: Open Sans, sans-serif !important;
+            font-size: inherit;
+            font-weight: 600;
+            color: #012970;
+        }
+
+        .card {
+            border-radius: 10px;
+        }
+
+        .card-header {
+            border-radius: 50% 50% 0px 0px !important;
+        }
+
+        .card-footer {
+            border-radius: 0px 0px 50% 50% !important;
+        }
+
+        .btn-nav:hover {
+            color: #4154f1;
+        }
+
+        .li-nav {
+            padding: 10px 0px 10px 10px !important;
+        }
+
+        #ctl00_ContentPlaceHolder1_WebChartControl1 {
+            width: inherit !important;
+        }
+
+        #ctl00_ContentPlaceHolder1_WebChartControl1_IMG {
+            width: inherit !important;
+            max-width: 80%;
+        }
+
+        h1, h21, h3, h4, h5, h6 {
+            color: black !important;
+        }
+
+        .circle {
+            height: 50px;
+            width: 50px;
+            align-items: center;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .underline {
+            text-decoration: underline !important;
+        }
+
+        .toggle-btn-nav {
+            display: none;
+        }
+
+        .toggle-sidebar-btn {
+            color: blue;
+        }
+
+        @media (max-width:1380px) {
+            .toggle-btn-nav {
+                display: block !important;
+            }
+        }
+
+        @media (min-width: 1380px) {
+            .custom-nav {
+                flex-wrap: nowrap !important;
+                justify-content: flex-start !important;
+            }
+        }
+
+        .custom-nav-link {
+            max-width: 300px !important;
+            color: black;
+            font-weight: 900;
+            font-size: larger;
+        }
+        /*.custom-nav-link :hover{
+            background-color:blue;
+        }*/
+        @media (max-width : 1980px) {
+
+
+            .custom-nav-link {
+                font-size: large;
+            }
+        }
+
+        @media (max-width : 1870px) {
+
+
+            .custom-nav-link {
+                font-size: medium;
+            }
+        }
+        /*@media (max-width : 1397px){
+            
+
+            .custom-nav-link {
+                font-size:medium;
+            }
+        }*/
+        /*  @media (max-width : 1670px){
+            
+
+            .custom-nav-link {
+                font-size:small;
+            }
+        }*/
+
+        @media (min-width: 1381px) {
+
+            #collaped-menu {
+                display: block !important;
+            }
+
+            #BluwaveLogo {
+                max-width: 190px !important;
+            }
+        }
+        /*@media (max-width: 1397px) {
+
+            .custom-nav-link{
+                font-size:smaller;
+            }
+
+        }*/
+        @media (max-width:1396px) {
+
+            .custom-nav-link {
+                font-size: medium;
+            }
+        }
+
+        @media(max-width: 1686px) {
+            .custom-nav-link {
+                font-size: 15px;
+            }
+        }
+
+        @media(max-width: 1596px) {
+            .custom-nav-link {
+                font-size: 14px;
+            }
+        }
+
+        @media(max-width: 1500px) {
+            .custom-nav-link {
+                font-size: 13px;
+            }
+        }
+
+        @media(max-width: 1414px) {
+            .custom-nav-link {
+                font-size: 12px;
+            }
+        }
+
+        @media(max-width: 1379px) {
+            .custom-nav-link {
+                font-size: 16px;
+            }
+
+            .brDesk {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1379px) {
+            #collaped-menu {
+                padding-top: 0px !important;
+                /*position: fixed;*/
+                z-index: 1000;
+                min-width: 349px;
+                max-width: 350px;
+                padding-left: 10px;
+                box-shadow: rgb(197 199 199 / 0.65) 6px 15px 10px 4px;
+                display: none;
+            }
+
+            #BluwaveLogo {
+                max-width: 155px !important;
+            }
+        }
+
+        @media (max-width: 1200px) {
+
+            #BluwaveLogo {
+                max-width: 115px !important;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .d-lg-none {
+                display: block !important;
+            }
+        }
+
+        @media (max-width: 380px) {
+
+            #BluwaveLogo {
+                max-width: 90px !important;
+            }
+        }
+
+        aside {
+            font-size: 13px !important;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: white; /* For browsers that do not support gradients */
+            background-image: linear-gradient(#0889cb, #ffffff);
+            /*background-image:url("/assets/img/BlueWave.jpg");*/
+            height: 1vmax;
+        }
+
+        .shadow-dark {
+            box-shadow: 0 8px 8px 0 rgba(0, 1, 0.2, 0.5), 5px 10px 15px 0 rgba(0, 0, 0.2, 0.19);
+        }
+
+        .line {
+            height: 3px;
+        }
+
+        .nav-item:hover .line {
+            background-color: #0889cb;
+        }
+
+        .navbar {
+            display: unset;
+        }
+
+        .fixed-top-custom {
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+        }
+
+        .search-bar {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+	
+<style>
+.WebControls {
+            margin-left: 15px !important;
+        }
+
+        @media(max-width:1260px) {
+            .text-huge {
+                font-size: 1rem !important;
+            }
+        }
+
+        @media(max-width:991px) {
+            .text-huge {
+                font-size: 1.25rem !important;
+            }
+        }
+
+        @media(max-width:804px) {
+            .text-huge {
+                font-size: 15px !important;
+            }
+        }
+
+        @media(max-width:767px) {
+            .text-huge {
+                font-size: 1.25rem !important;
+            }
+        }
+
+        @media(max-width:1306px) {
+            #AppointmentsLabel {
+                font-size: 16px !important;
+            }
+        }
+
+        @media(max-width:1030px) {
+            #Budgets {
+                font-size: 15px !important;
+            }
+        }
+
+        @media(max-width:1100px) {
+            #AppointmentsLabel {
+                font-size: 14px !important;
+            }
+        }
+
+        @media(max-width:1100px) {
+            #AppointmentsLabel {
+                font-size: 13px !important;
+            }
+        }
+        
+
+        @media(max-width:991px) {
+            #AppointmentsLabel {
+                font-size: 1.25rem !important;
+            }
+        }
+        @media(max-width:849px) {
+            #AppointmentsLabel {
+                font-size: 1rem !important;
+            }
+        }
+        @media(max-width:657px) {
+            #AppointmentsLabel, #Budgets {
+                font-size: 1.25rem !important;
+            }
+        }
+        @media(max-width:424px) {
+            #AppointmentsLabel, #Budgets {
+                font-size: 1rem !important;
+            }
+        }
+        @media(max-width:392px) {
+            .text-huge, #AppointmentsLabel, #Budgets {
+                font-size: 15px !important;
+            }
+        }
+        @media(max-width:350px) {
+            .text-huge, #AppointmentsLabel, #Budgets {
+                font-size: 13px !important;
+            }
+        }
+        #ctl00_ContentPlaceHolder1_JobsByType_IMG {
+            width: fit-content;
+        }
+
+        #siteDetailLoader {
+            position: fixed; /* Sit on top of the page content */
+            display: none; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+        }
+
+        .LoadMessage {
+            position: absolute;
+            top: 66px;
+            left: 262px;
+            margin-top: 0px;
+        }
+        .custom-date::-webkit-inner-spin-button,
+        .custom-date::-webkit-calendar-picker-indicator {
+            /* display: none;
+            -webkit-appearance: none; */
+            margin:0;
+        }
+        .custom-date::-webkit-datetime-edit {
+            display:none;
+            
+        }
+
+</style>
+
+</head>
+
+<body onload="InitliazeScripts()">
+    <form id="form1">
+        <!-- ======= Header ======= -->
+        <header id="header" class="header fixed-top d-flex align-items-center p-0 pt-1">
+
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="home.aspx" class="logo d-flex">
+                    <div style="width: inherit" align="center">
+                        <img id="BluwaveLogo" style="width: inherit; max-height: unset !important; z-index: 555 !important" src="assets/img/HeaderLogo.jpg" alt="Logo">
+                    </div>
+                </a>
+                <a class="navbar-brand toggle-btn-nav" id="btnToggler" onclick="Toggle(true)">
+                    <i class="bi bi-list toggle-sidebar-btn  text-primary"></i>
+                </a>
+            </div>
+            <!-- End Logo -->
+
+            <div class="search-bar">
+                <div class="input-group">
+                    <select Id="QuickSearch" class="form-control input-group-text border border-right-0 text-primary" Style="max-width: 135px !important; -webkit-appearance: listbox !important">
+                        <option Selected>Select</option>
+                        <option>Account Number</option>
+                        <option>Companies</option>
+                        <option>Contacts</option>
+                        <option>Leads</option>
+                        <option>Name of Opportunity</option>
+                        <option>Opportunities by Company</option>
+                        <option>Quote/Opp No.</option>
+                    </select>
+                    <label typeof="search" ID="NavSearch" placeholder="Search..." class="form-control" aria-describedby="basic-addon2" />
+                    <input type="button" class="input-group-text bg-primary text-white" Id="Go" Value="GO!"  />
+                </div>
+            </div>
+            <!-- End Search Bar -->
+
+            <nav class="header-nav ms-auto">
+                <ul class="d-flex align-items-center">
+
+                    <li class="nav-item d-block d-lg-none">
+                        <a class="nav-link nav-icon search-bar-toggle " href="#">
+                            <i class="bi bi-search text-primary"></i>
+                        </a>
+                    </li>
+                    <!-- End Search Icon-->
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-icon bg-primary circle p-1 m-1 text-white" href="#" title="Expand Panel" data-bs-toggle="dropdown">
+                            <i class="bi bi-question" style="font-size: 35px; position: absolute; left: 7px; top: 0px"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications shadow-dark" id="target1">
+                            <li class="dropdown-footer">
+                                <a href="GettingStarted.aspx" title="Getting Started" class="text-primary">Getting Started</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-footer">
+                                <a href="#" title="Frequently asked questions" class="text-primary">FAQs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--End of getting started question mark-->
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link nav-icon bg-primary circle  m-1 p-1 text-white" href="#" data-bs-toggle="dropdown">
+                            <i class="bi bi-bell" style="position: absolute; left: 14px; top: 10px"></i>
+                            <span class="badge bg-primary badge-number border border-white">0</span>
+                        </a>
+                        <!-- End Notification Icon -->
+
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications shadow-dark" style="z-index: 9999; position: absolute">
+                            <li class="dropdown-header">You have 0 new notifications
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class="notification-item">
+                                <i class="bi bi-exclamation-circle text-warning"></i>
+                                <div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>30 min. ago</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class="notification-item">
+                                <i class="bi bi-x-circle text-danger"></i>
+                                <div>
+                                    <h4>Atque rerum nesciunt</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>1 hr. ago</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class="notification-item">
+                                <i class="bi bi-check-circle text-success"></i>
+                                <div>
+                                    <h4>Sit rerum fuga</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>2 hrs. ago</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class="notification-item">
+                                <i class="bi bi-info-circle text-primary"></i>
+                                <div>
+                                    <h4>Dicta reprehenderit</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-footer">
+                                <a href="#">Show all notifications</a>
+                            </li>
+                        </ul>
+                        <!-- End Notification Dropdown Items -->
+
+                    </li>
+                    <!-- End Notification Nav -->
+
+                    <li class="nav-item dropdown p-0">
+
+                        <a class="nav-link nav-profile align-items-center p-1" href="#" data-bs-toggle="dropdown">
+                            <table>
+                                <tr>
+                                    <td width="90%">
+                                        <img src="assets/img/Default.png" alt="Profile" class="rounded-circle">
+                                        <div style="font-size: 10px" class="small p-0 m-0">
+                                        </div>
+                                    </td>
+                                    <td width="10%">
+                                        <span class="d-block dropdown-toggle"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </a>
+                        <!-- End Profile Iamge Icon -->
+
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile shadow-dark">
+                            <li class="dropdown-header">
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" OnClick="userprofile">
+                                    <i class="bi bi-person"></i>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" OnClick="Logout_Click">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    Log Out
+                                </a>
+                            </li>
+
+                        </ul>
+                        <!-- End Profile Dropdown Items -->
+                    </li>
+                    <!-- End Profile Nav -->
+
+                </ul>
+            </nav>
+            <!-- End Icons Navigation -->
+
+        </header>
+        <!-- End Header -->
+        <br />
+        <br />
+        <aside class="navbar navbar-expand-lg custom-nav bg-white menu-vertical fixed-top" id="collaped-menu">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav pt-0">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#Quick-Create" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-plus"></i><span>Quick Create</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="Quick-Create" id="Quick-Create" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <input type="button" class="btn-nav" value="Appointment" />
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#Home-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-house-fill"></i><span>&nbsp;Home</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="Home-nav" id="Home-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="Home.aspx" class="btn-nav">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Dashboard.aspx" class="btn-nav">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a runat="server" onserverclick="userprofile" class="btn-nav">
+                                        <span>Edit My Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a runat="server" onserverclick="sp" class="btn-nav">
+                                        <span>Sales Performance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a runat="server" onserverclick="ap" class="btn-nav">
+                                        <span>Active Pipeline</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#activities-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-calendar2-check"></i><span>&nbsp;Activities</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="activities-nav" id="activities-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="NewAppointment.aspx" class="btn-nav">
+                                        <span>Add New Activity</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Appointment.aspx" class="btn-nav">
+                                        <span>Diary Planner</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="OverdueActivities.aspx" class="btn-nav">
+                                        <span>To Do List</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="SendEmailForm.aspx?id=1" class="btn-nav">
+                                        <span>Send Email</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="NewServiceCycles.aspx" class="btn-nav">
+                                        <span>Add New Cycle</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ViewServiceCyclePlan.aspx" class="btn-nav">
+                                        <span>Cycle Planner</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#leads-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-cash-coin"></i><span>&nbsp;Leads</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="leads-nav" id="leads-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="NewLeads.aspx" class="btn-nav">
+                                        <span>Create New Lead</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ViewLeads.aspx" class="btn-nav">
+                                        <span>View Leads</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#contacts-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-journal"></i>
+                            <i class="bi bi-person-fill" style="font-size: 10px; position: relative; left: -15px"></i>
+                            <span style="position: relative; left: -15px">Contacts</span><span style="float: right; position: relative;"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="contacts-nav" id="contacts-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="NewContact.aspx" class="btn-nav">
+                                        <span>Add New Contact</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ViewContacts.aspx" class="btn-nav">
+                                        <span>View Contacts</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#companies-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-buildings"></i><span>&nbsp;Companies</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="companies-nav" id="companies-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="NewEditCompany.aspx" class="btn-nav">
+                                        <span>Add Company</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="CompaniesList.aspx" class="btn-nav">
+                                        <span>View Companies</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ContractPricing.aspx" class="btn-nav">
+                                        <span>Contract Pricing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="GroupContractPricing.aspx" class="btn-nav">
+                                        <span>Group Pricing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ServiceCyclesView.aspx" class="btn-nav">
+                                        <span>View Cycles</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ViewPriceList.aspx" class="btn-nav">
+                                        <span>Price List</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="AgreementCycles.aspx" class="btn-nav">
+                                        <span>Generate Jobs</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#opportunities-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-funnel-fill"></i><span>&nbsp;Opportunities</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="opportunities-nav" id="opportunities-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="#" runat="server" onserverclick="newoppclick" class="btn-nav">
+                                        <span>Add New Opportunity</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ViewOpportunities.aspx" class="btn-nav">
+                                        <span>View Opportunitues</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" runat="server" onserverclick="newquoteclick" class="btn-nav" id="QuoteDetailLink">
+                                        <span>New Quote</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#jobs-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-funnel-fill"></i><span>&nbsp;Jobs</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="jobs-nav" id="jobs-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="NewJob.aspx" class="btn-nav">
+                                        <span>Create New Job</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ViewJobs.aspx" class="btn-nav">
+                                        <span>View Jobs</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:showList();" class="btn-nav">
+                                        <span>View Scheduler</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#assets-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-funnel-fill"></i><span>&nbsp;Assets</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="jobs-nav" id="assets-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="ViewAssets.aspx" class="btn-nav">
+                                        <span>View Assets</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="NewCurrentProduct.aspx" class="btn-nav">
+                                        <span>New Asset</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#reports-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-bar-chart-fill"></i><span>&nbsp;Reports</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="reports-nav" id="reports-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="ReportList.aspx" class="btn-nav">
+                                        <span>CRM Reports</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="NewServiceReportList.aspx" class="btn-nav">
+                                        <span>Service Reports</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ReportsPush.aspx" class="btn-nav">
+                                        <span>Push Report Setup</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#system-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-gear-fill"></i><span>&nbsp;System Setup</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="system-nav" id="system-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="SystemAdmin.aspx" class="btn-nav">
+                                        <span>CRM Setup</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ServiceSystemAdmin.aspx" class="btn-nav">
+                                        <span>Service Setup</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="SecurityRoles.aspx" class="btn-nav">
+                                        <span>Administer Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" runat="server" onserverclick="userprofile" class="btn-nav">
+                                        <span>Edit Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ImportData.aspx" class="btn-nav">
+                                        <span>Imports</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="QuoteSetup.aspx" class="btn-nav">
+                                        <span>Quote Setup</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="PriceList.aspx" class="btn-nav">
+                                        <span>Pricelist Management</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="DocFiles.aspx" class="btn-nav">
+                                        <span>Documents</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="VolumePricing.aspx" class="btn-nav">
+                                        <span>Volume Pricing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ViewWorkFlows.aspx" class="btn-nav">
+                                        <span>Workflow</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#financials-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-wallet-fill"></i><span>&nbsp;Financials</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="financials-nav" id="financials-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="FinancialsForm.aspx" class="btn-nav">
+                                        <span>View Financials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="InvoiceImport.aspx" class="btn-nav">
+                                        <span>Upload Financials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ForecastT.aspx" class="btn-nav">
+                                        <span>Forecasts</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed custom-nav-link" data-bs-target="#lists-nav" data-bs-toggle="collapse" href="#" onclick="changeIcon(this)">
+                            <i class="bi bi-list-check"></i><span>&nbsp;List Manager</span><span style="float: right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            <div class="line"></div>
+                        </a>
+                        <div class="dropdown-menu nav-content collapse shadow-dark " aria-labelledby="lists-nav" id="lists-nav" data-bs-parent="#navbarNavDropdown">
+                            <ul class="p-4">
+                                <li>
+                                    <a href="ListManagementForm.aspx" class="btn-nav">
+                                        <span>View</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="CompanyAddressListReport.aspx" class="btn-nav">
+                                        <span>Company Address List</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </aside>
+        <br />
+        <br class="brDesk" />
+        <br class="brDesk" />
+        <main id="main" class=" pt-0 mt-4">
+		
+		
+		<div class="col-lg-4 col-md-6"">
+
+            <div class="card text-black  p-0 shadow-dark">
+                <div class="card-header border-bottom border-dark">
+                    <nobr>
+                        <img width="50" src="assets/img/icons/BluWave Icons_Appointments.svg">
+                        <label class="h5 text-black text-huge" id="AppointmentsLabel">
+                            <strong>Appointments for
+                                <label Id="lblDay">Today</label>
+                            </strong>
+                        </label>
+                        <input class="form-control form-control-sm border-primary custom-date" type="date" Id="Calendar1" style="width:auto !important; display:unset !important" />
+                        
+                    </nobr>
+                            
+                </div>
+                <div class="card-body overflow-auto p-0" style="min-height: 150px; height:200px">
+                   
+                </div>
+                <div class="card-footer  border-top border-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="Appointment.aspx" class="btn btn-sm btn-outline-primary">
+                                <nobr>Go to diary planner</nobr></a>
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-4" align="right">
+                            <a href="OverdueActivities.aspx" class="btn btn-sm btn-outline-primary">
+                                <nobr>To Do List</nobr></a>
+                        </div>
+
+                    </div>
+                </div>
+			</div>
+		</div>
+
+		
+        </main>
+    </form>
+
+    <!-- Vendor JS Files -->
+    <script type="text/javascript" src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script type="text/javascript" src="assets/vendor/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/quill/quill.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script type="text/javascript" src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        var x = window.matchMedia("(min-width: 1380px)")
+        ListenToMedia(x)
+        x.addListener(ListenToMedia)
+        //navbar navbar-expand-lg custom-nav bg-white menu-vertical
+        function Toggle(val) {
+            if (val == true) {
+                document.getElementById("navbarNavDropdown").setAttribute("class", "navbar-collapse");
+                document.getElementById("collaped-menu").setAttribute("style", "display:block !important;");
+                document.getElementById("btnToggler").setAttribute("onclick", "Toggle(false)");
+            }
+            else {
+                document.getElementById("navbarNavDropdown").setAttribute("class", "collapse navbar-collapse");
+                if (window.innerWidth < 1380) {
+                    document.getElementById("collaped-menu").setAttribute("style", "display:none !important;");
+                    document.getElementById("collaped-menu").setAttribute("class", "navbar navbar-expand-lg custom-nav bg-white menu-vertical");
+                }
+                else {
+                    document.getElementById("collaped-menu").setAttribute("style", "display:block !important;");
+                    document.getElementById("collaped-menu").setAttribute("class", "navbar navbar-expand-lg custom-nav bg-white menu-vertical");
+                }
+                document.getElementById("btnToggler").setAttribute("onclick", "Toggle(true)");
+            }
+        }
+
+        function ListenToMedia(x) {
+
+            if (x.matches) {
+                document.getElementById("collaped-menu").setAttribute("class", "navbar navbar-expand-lg custom-nav bg-white shadow-dark fixed-top-custom pt-0 pb-0 ");
+                document.getElementById("collaped-menu").setAttribute("style", "display:block !important;  top:70px;");
+            }
+            else {
+
+                document.getElementById("collaped-menu").removeAttribute("style");
+                document.getElementById("collaped-menu").setAttribute("class", "navbar navbar-expand-lg custom-nav bg-white menu-vertical");
+            }
+        }
+
+        var styleStr = ".menu-vertical{position: fixed;top: 60px;left: 0; bottom: 0;width: 300px; z-index: 996; transition: all 0.3s;padding: 20px; overflow-y: auto;scrollbar-width: thin;scrollbar-color: #aab7cf transparent;box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);background-color: #fff;}";
+        function InitliazeScripts() {
+            document.getElementById("MasterStyles").innerText += styleStr;
+        }
+        function changeIcon(element) {
+            try {
+                const classUp = "bi bi-chevron-up ms-auto";
+                const classDown = "bi bi-chevron-down ms-auto";
+
+                const children = element.children;
+                const child = children[children.length - 2].lastElementChild;
+
+                var actualClass = child.getAttribute("class");
+                if (actualClass == classUp) {
+                    child.setAttribute("class", classDown);
+                }
+                else {
+                    var others = document.getElementsByClassName(classUp);
+                    if (others != null) {
+                        for (var i = 0; i < others.length; i++) {
+                            others[i].setAttribute("class", classDown);
+                        }
+                    }
+                    child.setAttribute("class", classUp);
+                }
+            }
+            catch (e) {
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+
