@@ -1,0 +1,45 @@
+<html>
+<head>
+	<!-- Importing jquery cdn -->
+	<link href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	<!-- JavaScript function to display the calendar -->
+	<script language="javascript">
+		$(document).ready(function () {
+			$("#txtdate").datepicker({
+				showOn: "button",
+
+				// Button image stored on local device
+                buttonImage: "assets/img/icons/calendar.svg",
+				buttonImageOnly: true,
+                onSelect: function (dateText) {
+                    alert(dateText); // Outputs the selected date to the console
+                    // Perform any further actions with the selected date here
+                }
+			});
+		});
+	</script>
+
+	<!-- Customizing the datepicker button image -->
+	<style type="text/css">
+        .ui-datepicker-trigger {
+            max-height: 28px;
+            border: 1px solid blue;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 0.25rem;
+            color: #0d6efd;
+        }
+	</style>
+</head>
+
+<body>
+	<form class="form-group">
+		<input id="txtdate" type="text" hidden>
+	</form>
+</body>
+</html>

@@ -29,8 +29,38 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/vendor/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="assets/vendor/smoothness/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript" src="assets/vendor/smoothness/jquery-ui.js"></script>
+
+    <!-- JavaScript function to display the calendar -->
+    <script language="javascript">
+        $(document).ready(function () {
+            $("#txtdate").datepicker({
+                showOn: "button",
+
+                // Button image stored on local device
+                buttonImage: "assets/img/icons/calendar.svg",
+                buttonImageOnly: true,
+                onSelect: function (dateText) {
+                    document.getElementById("demo").innerText = dateText;
+                }
+            });
+        });
+    </script>
 
     <style type="text/css" id="MasterStyles">
+
+        .ui-datepicker-trigger {
+            max-height: 28px;
+            border: 1px solid blue;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 0.25rem;
+            color: #0d6efd;
+        }
         .btn-nav {
             background-color: transparent;
             border: none;
@@ -131,14 +161,14 @@
             }
         }
         /*@media (max-width : 1397px){
-            
+
 
             .custom-nav-link {
                 font-size:medium;
             }
         }*/
         /*  @media (max-width : 1670px){
-            
+
 
             .custom-nav-link {
                 font-size:small;
@@ -280,9 +310,9 @@
             margin-right: auto;
         }
     </style>
-	
-<style>
-.WebControls {
+
+    <style>
+        .WebControls {
             margin-left: 15px !important;
         }
 
@@ -333,38 +363,44 @@
                 font-size: 13px !important;
             }
         }
-        
+
 
         @media(max-width:991px) {
             #AppointmentsLabel {
                 font-size: 1.25rem !important;
             }
         }
+
         @media(max-width:849px) {
             #AppointmentsLabel {
                 font-size: 1rem !important;
             }
         }
+
         @media(max-width:657px) {
             #AppointmentsLabel, #Budgets {
                 font-size: 1.25rem !important;
             }
         }
+
         @media(max-width:424px) {
             #AppointmentsLabel, #Budgets {
                 font-size: 1rem !important;
             }
         }
+
         @media(max-width:392px) {
             .text-huge, #AppointmentsLabel, #Budgets {
                 font-size: 15px !important;
             }
         }
+
         @media(max-width:350px) {
             .text-huge, #AppointmentsLabel, #Budgets {
                 font-size: 13px !important;
             }
         }
+
         #ctl00_ContentPlaceHolder1_JobsByType_IMG {
             width: fit-content;
         }
@@ -389,18 +425,18 @@
             left: 262px;
             margin-top: 0px;
         }
+
         .custom-date::-webkit-inner-spin-button,
         .custom-date::-webkit-calendar-picker-indicator {
             /* display: none;
             -webkit-appearance: none; */
-            margin:0;
-        }
-        .custom-date::-webkit-datetime-edit {
-            display:none;
-            
+            margin: 0;
         }
 
-</style>
+        .custom-date::-webkit-datetime-edit {
+            display: none;
+        }
+    </style>
 
 </head>
 
@@ -997,45 +1033,67 @@
         <br class="brDesk" />
         <br class="brDesk" />
         <main id="main" class=" pt-0 mt-4">
-		
-		
-		<div class="col-lg-4 col-md-6"">
-
-            <div class="card text-black  p-0 shadow-dark">
-                <div class="card-header border-bottom border-dark">
-                    <nobr>
-                        <img width="50" src="assets/img/icons/BluWave Icons_Appointments.svg">
-                        <label class="h5 text-black text-huge" id="AppointmentsLabel">
-                            <strong>Appointments for
-                                <label Id="lblDay">Today</label>
-                            </strong>
-                        </label>
-                        <input class="form-control form-control-sm border-primary custom-date" type="date" Id="Calendar1" style="width:auto !important; display:unset !important" />
-                        
-                    </nobr>
-                            
-                </div>
-                <div class="card-body overflow-auto p-0" style="min-height: 150px; height:200px">
-                   
-                </div>
-                <div class="card-footer  border-top border-dark">
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="Appointment.aspx" class="btn btn-sm btn-outline-primary">
-                                <nobr>Go to diary planner</nobr></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verticalycentered">
+                Vertically centered
+            </button>
+            <div class="modal fade" id="verticalycentered" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Vertically Centered</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="col-2"></div>
-                        <div class="col-4" align="right">
-                            <a href="OverdueActivities.aspx" class="btn btn-sm btn-outline-primary">
-                                <nobr>To Do List</nobr></a>
+                        <div class="modal-body">
+                            Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
                         </div>
-
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
                     </div>
                 </div>
-			</div>
-		</div>
+            </div>
 
-		
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card text-black  p-0 shadow-dark">
+                    <div class="card-header border-bottom border-dark">
+                        <div class="row">
+                            <div class="col-10">
+                                <img width="50" src="assets/img/icons/BluWave Icons_Appointments.svg">
+                                <label class="h5 text-black text-huge" id="AppointmentsLabel">
+                                    <strong>
+                                        Appointments for
+										<input class="form-control form-control-sm border-primary" type="date" Id="Calendar1" style="width:unset !important; display:unset !important" />
+                                    </strong>
+                                </label>
+                            </div>
+                                
+                        </div>
+                    </div>
+                    <div class="card-body overflow-auto p-0" style="min-height: 150px; height:200px">
+                        <p id="demo"></p>
+                    </div>
+                    <div class="card-footer  border-top border-dark">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="Appointment.aspx" class="btn btn-sm btn-outline-primary">
+                                    <nobr>Go to diary planner</nobr>
+                                </a>
+                            </div>
+                            <div class="col-2"></div>
+                            <div class="col-4" align="right">
+                                <a href="OverdueActivities.aspx" class="btn btn-sm btn-outline-primary">
+                                    <nobr>To Do List</nobr>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </main>
     </form>
 
